@@ -1,0 +1,43 @@
+<ion-view title="Login" >
+    <ion-content padding="true" class="has-header">
+        <form name="login" ng-submit="vm.doLogin()" novalidate>
+            <div class="spacer" style="height: 10px;"></div>
+            <ion-list>
+                <label class="item item-input">
+                    <!-- <span class="input-label">Email</span> -->
+                    <input
+                        ng-model="vm.email"
+                        name="email" 
+                        type="email"
+                        placeholder="Email"
+                        required>
+                </label>
+                <label class="item item-input">
+                    <!-- <span class="input-label">Password</span> -->
+                    <input
+                        ng-model="vm.password"
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                        ng-minlength="6"
+                        required>
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 10px;"></div>
+            <p class="alert alert-danger" ng-show="login.email.$dirty && login.email.$invalid">
+                Please enter valid email!
+            </p>
+            <p class="alert alert-danger" ng-show="login.password.$error.minlength">
+                A minimum of 6 characters is required!
+            </p>
+            <div class="spacer" style="height: 30px;"></div>
+            <!-- <button class="button button-stable button-block" ng-click="doLogin()">Login</button> -->
+            <button 
+                class="button button-stable button-block"
+                ng-disabled="login.$invalid">Login</button>
+            <a ui-sref="register" class="button button-positive button-clear button-block ">Create an account</a>
+        </form>
+        <button class="button button-positive button-block" >Login with Facebook</button>
+        <button class="button button-assertive button-block" >Login with Google</button>
+    </ion-content>
+</ion-view>

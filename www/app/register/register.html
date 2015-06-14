@@ -1,0 +1,41 @@
+<ion-view title="Register" >
+    <ion-content padding="true" class="has-header">
+        <form ng-submit="vm.doRegister()" name="register">
+            <ion-list>
+                <label class="item item-input">
+                    <!-- <span class="input-label">Email</span> -->
+                    <input
+                        ng-model="vm.password"
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        required>
+                </label>
+                <label class="item item-input">
+                    <!-- <span class="input-label">Password</span> -->
+                    <input
+                        ng-model="vm.password"
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                        ng-minlength="6"
+                        required>
+                </label>
+                <label class="item item-input">
+                    <!-- <span class="input-label">Confirm Password</span> -->
+                    <input type="password" placeholder="Confirm Password">
+                </label>
+            </ion-list>
+            <p class="alert alert-danger" ng-show="login.email.$dirty && login.email.$invalid">
+                Please enter valid email!
+            </p>
+            <p class="alert alert-danger" ng-show="login.password.$error.minlength">
+                A minimum of 6 characters is required!
+            </p>
+            <div class="spacer" style="height: 30px;"></div>
+            <button class="button button-stable button-block "
+                ng-disabled="register.$invalid">Register</button>
+            <a ui-sref="login" class="button button-positive button-clear button-block " >Login</a>
+        </form>
+    </ion-content>
+</ion-view>
