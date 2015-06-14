@@ -10,6 +10,7 @@
             'siguide.core',
 
             /** feature modules */
+            'siguide.intro',
             'siguide.login',
             'siguide.register',
 
