@@ -19,7 +19,7 @@
 
 		function startApp()
 		{
-			$state.go('tab.dash');
+			$state.go('login');
 		}
 
 		function next()
