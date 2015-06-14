@@ -1,0 +1,65 @@
+<ion-view view-title="Intro">
+    <ion-nav-buttons side="left">
+        <button class="button button-stable  no-animation" ng-click="vm.startApp()" ng-show="!vm.slideIndex">
+            Skip Intro
+        </button>
+        <button class="button button-stable  no-animation" ng-click="vm.previous()" ng-show="vm.slideIndex > 0">
+            Previous Slide
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-stable  no-animation" ng-click="vm.next()" ng-show="vm.slideIndex != 3">
+            Next
+        </button>
+        <button class="button button-stable  no-animation" ng-click="vm.startApp()" ng-show="vm.slideIndex == 3">
+            Start SiGuide
+        </button>
+    </ion-nav-buttons>
+    <ion-slide-box on-slide-changed="vm.slideChanged(index)">
+        <ion-slide>
+            <h3>Thank you for installing the SiGuide!</h3>
+            <div id="logo">
+                <img src="http://code.ionicframework.com/assets/img/app_icon.png">
+            </div>
+            <p>
+                We've worked super hard to make your traveling more efficient.
+            </p>
+            <p>
+                Check all itenary we already provided for you.
+            </p>
+        </ion-slide>
+        <ion-slide>
+            <h3>Best Iternary</h3>
+            <div id="logo">
+                <img src="http://code.ionicframework.com/assets/img/app_icon.png">
+            </div>
+            <p>
+              <p>Display an image about this feature</p>
+            </p>
+        </ion-slide>
+        <ion-slide>
+            <h3>Find Best Place</h3>
+            <div id="list">
+                <h5>Just three steps:</h5>
+                <ol>
+                    <li>Insert destination</li>
+                    <li>Insert Budget</li>
+                    <li>Select the desired destination</li>
+                    <li>Enjoy your traveling</li>
+                </ol>
+            </div>
+            <p>Display an image about this feature</p>
+        </ion-slide>
+        <ion-slide>
+            <h3>Using Awesome</h3>
+            <div id="list">
+                <h5>Just three steps:</h5>
+                <ol>
+                    <li>Be awesome</li>
+                    <li>Stay awesome</li>
+                    <li>There is no step 3</li>
+                </ol>
+            </div>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>
