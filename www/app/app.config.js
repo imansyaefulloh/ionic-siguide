@@ -35,7 +35,6 @@
             })
 
             .state('tab', {
-                url: '/login',
                 url: "/tab",
                 abstract: true,
                 templateUrl: "app/templates/tabs.html"
