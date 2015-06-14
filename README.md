@@ -8,13 +8,12 @@ Collaborators
 @mmaulanaabdullah   
 @digidumb   
 
-##How to install   
-* Create new ionic project using this command
+##How to isntall   
+* To setup on your local machine, clone this project using git
 ```shell
-$ ionic start project-name blank
-$ cd project-name
+$ git clone https://github.com/imansyaefulloh/ionic-siguide.git
+$ cd ionic-siguide
 ```
-* Download this repository and copy to your ionic project, and overwrite all   
 * For running app on the browser   
 ```shell
 $ ionic serve --lab
