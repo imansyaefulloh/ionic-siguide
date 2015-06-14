@@ -8,14 +8,14 @@ Collaborators
 @mmaulanaabdullah   
 @digidumb   
 
-How to install   
-1. Create new ionic project   
+##How to install   
+* Create new ionic project using this command
 ```shell
 $ ionic start project-name blank
 $ cd project-name
 ```
-2. Download this repository and copy to your ionic project, and overwrite all   
-3. Running app on the browser   
+* Download this repository and copy to your ionic project, and overwrite all   
+* For running app on the browser   
 ```shell
 $ ionic serve --lab
 ```
