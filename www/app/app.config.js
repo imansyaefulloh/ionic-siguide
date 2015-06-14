@@ -11,11 +11,11 @@
     function config($urlRouterProvider, $stateProvider) {
 
         // $urlRouterProvider.otherwise('/tab/dash');
-        $urlRouterProvider.otherwise('/login');
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
             .state('intro', {
-                url: '/intro',
+                url: '/',
                 templateUrl: 'app/intro/intro.html',
                 controller: 'IntroCtrl as vm',
                 // controllerAs: 'vm'
